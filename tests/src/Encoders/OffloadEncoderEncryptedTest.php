@@ -4,7 +4,7 @@ namespace Aol\Offload\Encoders;
 
 class CacheLinkEncoderEncryptedTest extends OffloadEncoderTest
 {
-    public function setUp()
+    public function setUp(): void
     {
         parent::setUp();
         $this->encoder = new OffloadEncoderEncryptedAes256($this->encoder, 'foo', [

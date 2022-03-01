@@ -1,13 +1,14 @@
 <?php
 
 namespace Aol\Offload\Lock;
+use PHPUnit\Framework\TestCase;
 
-class OffloadLockBypassTest extends \PHPUnit_Framework_TestCase
+class OffloadLockBypassTest extends TestCase
 {
     /** @var OffloadLockBypass */
     protected $lock;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->lock = new OffloadLockBypass();
     }

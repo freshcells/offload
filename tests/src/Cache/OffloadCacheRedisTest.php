@@ -4,7 +4,7 @@ namespace Aol\Offload\Cache;
 
 class OffloadCacheRedisTest extends OffloadCacheTest
 {
-    protected function setUp()
+    protected function setUp(): void
     {
         $client = new \Predis\Client();
         $client->flushdb();

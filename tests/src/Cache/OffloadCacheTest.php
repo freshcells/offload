@@ -1,8 +1,9 @@
 <?php
 
 namespace Aol\Offload\Cache;
+use PHPUnit\Framework\TestCase;
 
-abstract class OffloadCacheTest extends \PHPUnit_Framework_TestCase
+abstract class OffloadCacheTest extends TestCase
 {
     /** @var OffloadCacheInterface */
     protected $cache;

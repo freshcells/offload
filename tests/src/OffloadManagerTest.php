@@ -1,13 +1,14 @@
 <?php
 
 namespace Aol\Offload;
+use PHPUnit\Framework\TestCase;
 
 use Aol\Offload\Cache\OffloadCacheInterface;
 use Aol\Offload\Deferred\OffloadDeferred;
 use Aol\Offload\Encoders\OffloadEncoderStandard;
 use Aol\Offload\Exceptions\OffloadDrainException;
 
-abstract class OffloadManagerTest extends \PHPUnit_Framework_TestCase
+abstract class OffloadManagerTest extends TestCase
 {
     /** @var OffloadManager */
     protected $manager;

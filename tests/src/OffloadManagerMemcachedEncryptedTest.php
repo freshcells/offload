@@ -6,7 +6,7 @@ use Aol\Offload\Encoders\OffloadEncoderEncryptedAes256;
 
 class OffloadManagerMemcachedEncryptedTest extends OffloadManagerMemcachedTest
 {
-    protected function setUp()
+    protected function setUp(): void
     {
         parent::setUp();
         $this->manager->getCache()->setEncoder(

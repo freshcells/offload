@@ -1,8 +1,9 @@
 <?php
 
 namespace Aol\Offload\Lock;
+use PHPUnit\Framework\TestCase;
 
-abstract class OffloadLockTest extends \PHPUnit_Framework_TestCase
+abstract class OffloadLockTest extends TestCase
 {
     /** @var OffloadLockInterface */
     protected $lock;

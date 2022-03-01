@@ -7,7 +7,7 @@ use Aol\Offload\Lock\OffloadLockRedis;
 
 class OffloadManagerRedisTest extends OffloadManagerTest
 {
-    protected function setUp()
+    protected function setUp(): void
     {
         $client = new \Predis\Client();
         $client->flushdb();

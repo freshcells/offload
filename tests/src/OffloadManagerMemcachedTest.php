@@ -7,7 +7,7 @@ use Aol\Offload\Lock\OffloadLockMemcached;
 
 class OffloadManagerMemcachedTest extends OffloadManagerTest
 {
-    protected function setUp()
+    protected function setUp(): void
     {
         $client = new \Memcached();
         $client->addServer('localhost', 11211);

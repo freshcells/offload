@@ -14,7 +14,7 @@ class OffloadManagerMockTest extends TestCase
     /** @var OffloadManagerCache|MockObject */
     private $cache;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->offload_manager = new OffloadManager(
             $this->getMock('Aol\Offload\Cache\OffloadCacheInterface'),

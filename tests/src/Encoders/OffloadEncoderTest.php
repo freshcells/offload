@@ -2,12 +2,14 @@
 
 namespace Aol\Offload\Encoders;
 
-class OffloadEncoderTest extends \PHPUnit_Framework_TestCase
+use PHPUnit\Framework\TestCase;
+
+class OffloadEncoderTest extends TestCase
 {
     /** @var OffloadEncoderInterface */
     protected $encoder;
 
-    public function setUp()
+    public function setUp(): void
     {
         $this->encoder = new OffloadEncoderStandard();
     }

@@ -4,7 +4,7 @@ namespace Aol\Offload\Lock;
 
 class OffloadLockRedisTest extends OffloadLockTest
 {
-    protected function setUp()
+    protected function setUp(): void
     {
         $client = new \Predis\Client();
         $client->flushdb();
